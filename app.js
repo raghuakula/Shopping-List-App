@@ -1,4 +1,5 @@
-
+/*global $ */
+/*eslint no-console: ["log", { allow: ["log"] }] */
 
 
 $(function() {
@@ -10,16 +11,10 @@ $(function() {
 
       foodToAdd = $(event.currentTarget).find('#shopping-list-entry');
 
-      console.log("Adding food: " + foodToAdd);
+      console.log("Adding food: " + foodToAdd.val());
     });
-
-
-
-
-
-
 
 
 console.log("ready!");
 
-};
+});
